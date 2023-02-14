@@ -1,0 +1,14 @@
+/Users/xividi/Projects/todo/todo/todo/bin/Debug/netstandard2.0/todo.deps.json
+/Users/xividi/Projects/todo/todo/todo/bin/Debug/netstandard2.0/todo.dll
+/Users/xividi/Projects/todo/todo/todo/bin/Debug/netstandard2.0/ref/todo.dll
+/Users/xividi/Projects/todo/todo/todo/bin/Debug/netstandard2.0/todo.pdb
+/Users/xividi/Projects/todo/todo/todo/obj/Debug/netstandard2.0/todo.csproj.AssemblyReference.cache
+/Users/xividi/Projects/todo/todo/todo/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/xividi/Projects/todo/todo/todo/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/xividi/Projects/todo/todo/todo/obj/Debug/netstandard2.0/todo.AssemblyInfoInputs.cache
+/Users/xividi/Projects/todo/todo/todo/obj/Debug/netstandard2.0/todo.AssemblyInfo.cs
+/Users/xividi/Projects/todo/todo/todo/obj/Debug/netstandard2.0/todo.csproj.CoreCompileInputs.cache
+/Users/xividi/Projects/todo/todo/todo/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/xividi/Projects/todo/todo/todo/obj/Debug/netstandard2.0/todo.dll
+/Users/xividi/Projects/todo/todo/todo/obj/Debug/netstandard2.0/ref/todo.dll
+/Users/xividi/Projects/todo/todo/todo/obj/Debug/netstandard2.0/todo.pdb

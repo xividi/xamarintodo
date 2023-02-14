@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:todo"
+             x:Class="todo.MainPage"> 
+
+    <ContentPage.BindingContext>
+        <local:TodoListViewModel/>
+    </ContentPage.BindingContext>
+
+    <StackLayout>
+
+        <FlexLayout JustifyContent="SpaceEvenly">
+
+            <Entry x:Name="InputField"
+                Text="{Binding TodoInputValue}"
+                Placeholder="type here"
+                ReturnCommand="{Binding AddTodoCommand}"
+
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="Start"
+                Margin="0, 60, 0, 0"
+                WidthRequest="350" />
+
+            <ImageButton
+                    Command="{Binding AddTodoCommand}"
+                    Source="add.png"
+                    Scale="0.8"
+                    Margin="0, 60, 0, 0" />
+
+        </FlexLayout>
+
+
+        <ListView
+
+            x:Name="TodoList"
+            ItemsSource="{Binding TodoItems}">
+
+            <ListView.ItemTemplate>
+
+                <DataTemplate>
+
+                    <ViewCell>
+
+                        <FlexLayout JustifyContent="SpaceBetween"
+                                    AlignContent="Center"
+                                    Padding="15, 0">
+                            <ContentView>
+
+                                <FlexLayout>
+
+                                <CheckBox IsChecked="{Binding Complete}"/>
+
+                                <Label
+                                    Text="{Binding TodoText}"
+                                    FontSize="Large"
+                                    VerticalTextAlignment="Center"/>
+                                </FlexLayout>
+                            </ContentView>
+
+                            <ImageButton
+                                Source="delete.png"
+                                Scale="1.5"
+                                Command="{Binding Path=BindingContext.RemoveTodoCommand, Source={x:Reference TodoList}}"
+                                CommandParameter="{Binding .}"
+                                />
+                        </FlexLayout>
+                    </ViewCell>
+                </DataTemplate>
+             </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>
+
